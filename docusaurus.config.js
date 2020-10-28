@@ -1,15 +1,15 @@
 module.exports = {
   title: 'Teorisider',
   tagline: 'Teori til quizengine',
-  url: 'https://matte.oppgaver.net',
-  baseUrl: '/teori/',
+  url: 'https://teorisider.onrender.com',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'audunhauge', // Usually your GitHub org/user name.
   projectName: 'teorisider', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Teori Dider',
+      title: 'Teori Sider',
       logo: {
         alt: 'Teori Logo',
         src: 'img/logo.svg',
