@@ -43,19 +43,18 @@ Du valgte fargen rød - den har koden #FF0000
 
 1. Legg til kode slik at fargen brukeren skriver vises på skjema
 
-2. Utvid programmet slik at bruker kan registrere nye farger med hexcoder.
+1. Utvid programmet slik at bruker kan registrere nye farger med hexcoder.
 Det kan være på samme skjema.
-
 Skisse
-
 ```
 Registrer ny farge med kode:
 
   Fargenavn |____|    Hex |____|
   <|registrer>
 ```
-
 Disse nye fargene skal da kunne brukes i det første skjemaet (de kan være på samme side).
+
+3. Lag en omvendt løsning. Skriv inn en vilkårlig hexkode og du får det fargenavnet som er nærmest.
 
 ## Innlevering
 
