@@ -5,7 +5,8 @@ module.exports = {
      'mapset','praktisk','testing',
     'webapi','canvas','custom'],
     Sammendrag: ['uke34'],
-    Fagplan: ['laereplanmal']
+    Fagplan: ['laereplanmal'],
+    Prøver: ['prove1']
 
   },
 };

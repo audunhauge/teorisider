@@ -1,7 +1,6 @@
 ---
 id: string
 title: String
-sidebar_label: String
 ---
 
 
