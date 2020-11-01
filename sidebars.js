@@ -1,6 +1,11 @@
 module.exports = {
   someSidebar: {
-    Teoribok: ['array','beregninger','doc1', 'doc2', 'doc3'],
+    Teori: ['variable','string','array', 'lokker',
+     'funksjoner','beregninger','betingelser', 'objects','klasser',
+     'mapset','praktisk','testing',
+    'webapi','canvas','custom'],
     Sammendrag: ['uke34'],
+    Fagplan: ['laereplanmal']
+
   },
 };

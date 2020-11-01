@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Teorisider',
-  tagline: 'Teori til quizengine',
+  tagline: 'Teori til IT2',
   url: 'https://teorisider.onrender.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -9,7 +9,7 @@ module.exports = {
   projectName: 'teorisider', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Teori Sider',
+      title: 'Teoribok IT2',
       logo: {
         alt: 'Teori Logo',
         src: 'img/logo.svg',
@@ -71,12 +71,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/audunhauge/teorisider',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Audun Hauge. Built with Docusaurus.`,
     },
   },
   presets: [

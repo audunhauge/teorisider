@@ -1,7 +1,7 @@
 ---
 id: array
 title: Array
-sidebar_label: Array functions
+sidebar_label: Array
 ---
 
 

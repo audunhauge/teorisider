@@ -8,32 +8,39 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
+    title: 'Programmering med javascript',
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Javascript har utvikla seg til å bli et av de viktigste programmerings-språkene
+        i vår tid. Fra starten som et enkelt script-språk som skifter farger på websider til
+        dagens versjon som er motoren bak nesten alle store websider.
+        Hovedsakelig på klient-sida (i din nettleser), men stadig oftere også på serversida
+        - da ofte som nodejs
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Nodejs - javascript på serveren',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Det er en stor gevinst i å kunne bruke samme språk på serveren og på klientene.
+        Med moderne js basert på v8 er javascript blitt et raskt språk som løser de fleste
+        oppgavene på en rask og god måte
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Rask utvikling',
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Javascript oppdateres kontinuerlig - nye og bedre løsninger legges til språket fortløpende.
+        De nye delene av språket legges til etter grundig utprøving og diskusjon. Dette gjør at js
+        ofte ligger helt i teten i konkuransen med andre språk slik som python, java, c++ og c#.
+        Andre språk slik som Rust og Haskell er stifinnere for å finne de nye løsningene som moderne språk
+        skal ha, men de er ofte litt tyngre å ta i bruk / sette seg inn i.
       </>
     ),
   },
@@ -59,7 +66,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`Teorisider${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
@@ -72,7 +79,7 @@ function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
-              Get Started
+              Åpne boka
             </Link>
           </div>
         </div>
