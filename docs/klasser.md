@@ -8,14 +8,20 @@ Merk at klasser i js egentlig er objects med pene klær.
 
 [Denne linken](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model) gir en dypere innføring i javascript klasser - sammenligna med java.
 
-### Class 
-
-{% hint style="info" %}
+:::info
 I språk som Java,C++,D,C\# osv er det et klart skille mellom klasser og instanse.  
 Klassen er definisjonen - instansen er objektet du bruker.  
   
 I javascript er Klassen egentlig et Object \(prototype object\) og instansen er en kopi av dette objectet. Funksjonaliteten blir den samme ved at kopien har en link til prototypen \(som igjen kan ha en videre link\). Dette er måten arv implementeres på i js.
-{% endhint %}
+:::
+
+:::caution
+Note: The term instance has a specific technical meaning in class-based languages. In these languages, an instance is an individual instantiation of a class and is fundamentally different from a class. In JavaScript, "instance" does not have this technical meaning because JavaScript does not have this difference between classes and instances. However, in talking about JavaScript, "instance" can be used informally to mean an object created using a particular constructor function. So, in this example, you could informally say that jane is an instance of Engineer. Similarly, although the terms parent, child, ancestor, and descendant do not have formal meanings in JavaScript; you can use them informally to refer to objects higher or lower in the prototype chain.
+:::
+
+### Class 
+
+Med siste versjon av js (2020) kan du lage en klasse slik:
 
 ```javascript
 class Rektangel {
@@ -39,6 +45,8 @@ Rektangel {height: 30, width: 40}
 ```
 
 Dette sier oss at variabelen _r1_ er av typen _Rektangel_ og har innhold `{height: 30, width: 40}`.
+
+
 
 ### Eksempel - definisjon av en klasse for elev <a id="eksempel---definisjon-av-en-klasse-for-elev"></a>
 
