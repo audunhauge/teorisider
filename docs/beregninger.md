@@ -1,7 +1,7 @@
 ---
 id: beregninger
 title: Beregninger
-sidebar_label: Beregningerog uttrykk
+sidebar_label: Beregninger og uttrykk
 ---
 ## Beregninger og uttrykk
 
