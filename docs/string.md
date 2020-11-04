@@ -4,7 +4,7 @@ title: String
 ---
 
 
-## String-funksjoner
+## Innebygde funksjoner
 
 | Funksjon | Eksempel |
 | :--- | :--- |
