@@ -31,7 +31,7 @@ for (let i=1; i<11; i+=1) {
 }
 ```
 
-### for-løkke <a id="for-l&#xF8;kke"></a>
+## for-løkke <a id="for-l&#xF8;kke"></a>
 
 Denne løkkestrukturen er den vi bruker mest.  
 Strukturen er slik:
@@ -56,7 +56,7 @@ Det er verdiene i denne variabelen som styrer løkka.
 ≺betingelse≻ : `i≺11` så lenge som denne betingelsen er sann skal løkka fortsette.  
 ≺endring≻ : `i+=1` for hver gang løkka kjøres skal verdien i **i** økes med 1.
 
-#### break <a id="break"></a>
+### break <a id="break"></a>
 
 Du kan avslutte en løkke før den er ferdig med **break**.
 
@@ -74,6 +74,26 @@ for (let i=0; i<antallElever; i+=1) {
 ```
 
 Her brukes _break_ til å bryte ut av en løkke som leter gjennom en tabell.
+
+### continue
+
+Du kan hoppe til neste trinn i løkka med **continue**
+
+```javascript
+const tall = [2,16,4,8,98,112,600,113,5]
+let sum = 0;
+for (let i=0; i<tall.length; i+=1) {
+  if (tall[i] > 99) { continue; } 
+  // skal bare summere tall < 100
+  // så hopp til neste iterasjon
+  sum += tall[i];
+}
+```
+
+:::tip
+Du kan bryte ut av flere nøstede løkker med 
+```break label``` eller ```continue label``` .
+:::
 
 ## **while løkke**
 
