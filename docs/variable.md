@@ -7,6 +7,8 @@ slug: /
 
 Sjekk [Læreplanen](laereplanmal)
 
+$ F $
+
 En variabel i javascriptEn variabel er en navngitt beholder som kan inneholde en verdi. Denne verdien kan hentes ut \(brukes i en beregning\) eller endres/oppdateres.
 
  I javascript må variabelnavn begynne med en bokstav. De kan inneholde bokstaver, tall \_ og $. Du kan ikke bruke punktum eller mellomrom. 
