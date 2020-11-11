@@ -98,7 +98,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/audunhauge/teorisider/edit/master/docs/',
+            'https://github.com/audunhauge/teorisider/edit/master/',
           remarkPlugins: [math],
           rehypePlugins: [katex],
           showLastUpdateTime: true,
