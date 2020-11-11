@@ -7,7 +7,10 @@ slug: /
 
 Sjekk [Læreplanen](laereplanmal)
 
-$ F $
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
 
 En variabel i javascriptEn variabel er en navngitt beholder som kan inneholde en verdi. Denne verdien kan hentes ut \(brukes i en beregning\) eller endres/oppdateres.
 
@@ -101,8 +104,16 @@ function navnPaaFunksjon(parameter1, p2) {
 
 Som et eksempel viser vi definisjonen av sin\(\):
 
-{% tabs %}
-{% tab title="sin.js" %}
+<Tabs
+  defaultValue="sin"
+  values={[
+    {label: 'Sin', value: 'sin'},
+    {label: 'Cos', value: 'cos'},
+    {label: 'Atan', value: 'atan'},
+  ]}>
+  
+<TabItem value="sin">
+
 ```javascript
 function sin(x) {
    var y;  // verdien som skal returneres
@@ -111,11 +122,12 @@ function sin(x) {
    y = x - x*x*x/(3*2) + x*x*x*x*x/(5*4*3*2);
    return y;
 }
-
 ```
-{% endtab %}
 
-{% tab title="cos.js" %}
+</TabItem>
+
+<TabItem value="cos">
+
 ```javascript
 function cos(x) {
    var y;  // verdien som skal returneres
@@ -124,25 +136,23 @@ function cos(x) {
    y = 1 - x*x/(1*2) + x*x*x*x/(4*3*2);
    return y;
 }
-
-
 ```
-{% endtab %}
+</TabItem>
 
-{% tab title="atan.js" %}
+<TabItem value="atan">
+
 ```javascript
 function atan(x) {
    var y;  // verdien som skal returneres
    // vi bruker en Taylor approximasjon
-   // dette er ikke den reelle definisjonen av Math.atan
    // best presisjon for små verdier av x
    y = x - x*x*x/3 + x*x*x*x*x/5 - x*x*x*x*x*x*x/7;
    return y;
 }
-
 ```
-{% endtab %}
-{% endtabs %}
+
+</TabItem>
+</Tabs>
 
 
 

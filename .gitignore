@@ -8,6 +8,8 @@
 .docusaurus
 .cache-loader
 
+static/katex/
+
 # Misc
 .DS_Store
 .env.local
