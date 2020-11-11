@@ -3,7 +3,6 @@ id: string
 title: String
 ---
 
-
 ## Innebygde funksjoner
 
 | Funksjon | Eksempel |

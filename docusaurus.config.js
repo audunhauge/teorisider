@@ -11,11 +11,14 @@ module.exports = {
   projectName: 'teorisider', // Usually your repo name.
   stylesheets: [
     {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
+      href: '/katex/katex.min.css',
+      /*href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',*/
       type: 'text/css',
+      /*
       integrity:
         'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
       crossorigin: 'anonymous',
+      */
     },
   ],
   themeConfig: {
@@ -48,10 +51,10 @@ module.exports = {
           items: [
             {
               label: 'Style Guide',
-              to: 'docs/',
+              to: 'docs/doc1',
             },
             {
-              label: 'Second Doc',
+              label: 'Latex',
               to: 'docs/doc2/',
             },
           ],
@@ -60,16 +63,9 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href:'https://discord.gg/QuUPUuJvvY',
+              
             },
           ],
         },
