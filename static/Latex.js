@@ -2,9 +2,13 @@
 class Latex extends HTMLElement {
   constructor() {
     super();
+    this.displayMode = true;
+    this.leqno = true;
+    this.fleqn = false;
     this._root = this.attachShadow({ mode: "open" });
     this._root.innerHTML = `
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
         <div>
           <slot>
           </slot>
@@ -15,38 +19,39 @@ class Latex extends HTMLElement {
   }
 
   connectedCallback() {
-    const slot = this._root.querySelector("div");
-    const lat = slot.querySelectorAll("slot");
-    const tex = lat[0].assignedNodes()[0];
-    katex.render(tex.data, slot, {
-      throwOnError: false,
-      displayMode: true,leqno:true,
-    });
+    setTimeout(() => {
+      const {displayMode,leqno} = this;
+      const slot = this._root.querySelector("div");
+      const lat = slot.querySelectorAll("slot");
+      const tex = lat[0].assignedNodes()[0];
+      if (tex && tex.data) {
+        katex.render(tex.data, slot, {
+          throwOnError: false,
+          displayMode, leqno,
+        });
+      } else {
+        console.log("Connected callback failed to find latex");
+      }
+    }, 300);
   }
 
-  /*
+  
   static get observedAttributes() {
-    return ["progress", "color", "caption", "blurb", "level"];
+    return ["displaymode", "leqno"];
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
-    if (name === "progress") {
-      this.setProgress(newValue);
+    if (name === "displaymode") {
+      this.displayMode = (newValue === "true");
     }
-    if (name === "color") {
-      this.setColor(newValue);
+    if (name === "leqno") {
+      this.leqno = (newValue === "true");
     }
-    if (name === "caption") {
-      this.setCaption(newValue);
-    }
-    if (name === "blurb") {
-      this.setBlurb(newValue);
-    }
-    if (name === "level") {
-      this.setLevel(newValue);
+    if (name === "fleqn") {
+      this.fleqn = (newValue === "true");
     }
   }
-  */
+  
 }
 
 window.customElements.define("la-tex", Latex);
