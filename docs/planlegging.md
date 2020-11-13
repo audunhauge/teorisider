@@ -59,7 +59,13 @@ gjøre. Dette tilsvarer én eller flere instruksjoner
 i programkoden. Teksten i rektangelet gir en
 kort oppsummering av hva prosesseringen gjør.
 
-![flytdiagram](../static/img/flow.webp)
+<uml-diagram uml="[a]->[b];
+                  [<table>Joe |x|y|z];
+                  [<start>t]->[a];
+                  [b]->[<choice>x];[x] yes->[a];
+                  [x] no ->[c];
+                  [b]->[<input>c];[c]->[e];[e]->[a]">
+</uml-diagram>
 
 ## Pseudokode
 
@@ -99,6 +105,14 @@ Dokumenteringsstandarden UML har en type diagram som kalles user
 case, og som gir en grafisk oversikt over aktører og handlinger i et system.
 Dette er imidlertid en veldig formell standard som vi vil forenkle mye og
 kalles handlingsdiagram.
+
+<uml-diagram uml="[<actor>Kunde] -> [<usecase>Hent penger];
+                  [<actor>Server]-> [<usecase>Sett inn penger];
+                  [<database>BankDB]->[Sett inn penger];
+                  [<database>BankDB]->[Hent penger];
+                  ">
+</uml-diagram>
+
 I sin enkle form forteller handlingsdiagrammet noe om hvilke aktører som
 finnes i systemet, og hvilke handlinger de kan utføre. Aktørene tegnes som
 strekfigurer, mens handlingene som sirkler med navn på handlingene i.
