@@ -4,8 +4,8 @@ module.exports = {
       + `funksjoner,beregninger,betingelser,objects,klasser,`
       + `mapset,praktisk,testing,skjema,filformat,`
       + `webapi,canvas,custom`).split(","),
-    Planlegging: ('firesteg,kravspek,planlegging'
-    +''
+    Planlegging: ('firesteg,kravspek,planlegging,'
+    +'testing,dokumentasjon'
     +'').split(","),
     Sammendrag: ['uke34',
     'uke35',
