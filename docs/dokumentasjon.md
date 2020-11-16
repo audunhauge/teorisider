@@ -5,10 +5,17 @@ title: Dokumentasjon
 
 ## Kommentering av kode
 
-En viktig form for dokumentasjon for utviklere er kommentering av
-kode. I ActionScript for eksempel kommenterer man kode ved å skrive //
-i starten av en linje med tekst eller slå sammen flere linjer ved å benytte /*
-før og */ etter.
+I javascript lager vi kommentarer i koden med // for linjekommentarer og
+ /* blokk */  for blokk-kommentarer (over flere linjer).
+
+```js
+const ANTALL = 12;  // dette er en linjekommentar
+
+/**
+ * Dette er en blokk-kommentar - ofte forklaring på en funksjon
+ */
+ function test() { ... }
+```
 
 Når man kommenterer kode, er det fort gjort å kommentere ting som
 er like opplagt ved å se på koden. Kommentarer, slik som Her lagres det
