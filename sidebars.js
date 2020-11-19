@@ -15,7 +15,7 @@ module.exports = {
     'uke4043',
      ],
     Fagplan: ['laereplanmal'],
-    Prøver: ['prove1','prove2p']
+    Prøver: ['prove1','prove2p','proves1']
 
   },
 };
