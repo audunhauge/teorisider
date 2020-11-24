@@ -2,6 +2,20 @@
 title: Elektroniske komponenter
 ---
 
+<la-tex leqno="false" displaymode="true">\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</la-tex>
+
+Den får gjøre jobben inntil docusaurus støtter katex - neste stable release?
+
+Også nå en test på uml
+<uml-diagram uml="[a]->[b];
+                  [<table>Joe |x|y|z];
+                  [<start>t]->[a];
+                  [b]->[<choice>x];[x] yes->[a];
+                  [x] no ->[c];
+                  [b]->[<input>c];[c]->[e];[e]->[a]">
+</uml-diagram>
+
+
 ## Du skal kjenne til disse
 
 *  resistor
