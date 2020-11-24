@@ -10,7 +10,10 @@ module.exports = {
   organizationName: 'audunhauge', // Usually your GitHub org/user name.
   projectName: 'teorisider', // Usually your repo name.
   scripts: [
-    'Progress.js','Latex.js', 'UML.js', 'Quiz.js',
+    'https://teorisider.onrender.com/Progress.js',
+    'https://teorisider.onrender.com/Latex.js',
+    'https://teorisider.onrender.com/UML.js',
+    'https://teorisider.onrender.com/Quiz.js',
     '//unpkg.com/graphre/dist/graphre.js',
     '//unpkg.com/nomnoml/dist/nomnoml.js',
   ],
