@@ -1,5 +1,5 @@
 ---
-id: custom
+id: customwebcomponents
 title: Custom components
 ---
 

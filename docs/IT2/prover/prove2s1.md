@@ -1,5 +1,5 @@
 ---
-id: proves1
+id: prove2s1
 title: Prøve S1 November 2020
 ---
 

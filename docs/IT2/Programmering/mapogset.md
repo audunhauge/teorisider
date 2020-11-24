@@ -1,5 +1,5 @@
 ---
-id: mapset
+id: mapogset
 title: Map og Set
 ---
 

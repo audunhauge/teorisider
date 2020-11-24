@@ -1,33 +1,37 @@
-const fs = require('fs');
-const { listenerCount } = require('process');
-
-async function print(path) {
-  const dir = await fs.promises.opendir(path);
-  const list = [];
-  for await (const dirent of dir) {
-    if(!dirent.isDirectory())  list.push(dirent.name);
+const fs = require("fs");
+const map = {};
+const base = 'docs/';
+// only first level can mix dirs and files
+function build(path, map) {
+  console.log("Recur:",path,map);
+  const dir = fs.readdirSync(base + path,{withFileTypes:true});
+  for (const dirent of dir) {
+    if (dirent.isDirectory()) {
+      if (Array.isArray(map)) {
+        const sub = { type: "category", label: dirent.name, items: [] };
+        map.push(sub);
+        build(path + dirent.name + "/", sub.items);
+      } else {
+        const sub = [];
+        map[dirent.name] = sub;
+        console.log(dirent.name);
+        build(path + dirent.name + "/", sub);
+      }
+    } else {
+      if (Array.isArray(map)) {
+        map.push({type:'doc',id:path + dirent.name.replace('.md','') });
+      } else {
+        console.log("Came here",dirent.name,map);
+      }
+    }
   }
-  console.log(list);
 }
-print('./docs/Planlegging').catch(console.error);
-module.exports = {
-  someSidebar: {
-    JSTeori: (`variable,string,JStheory/array,lokker,`
-      + `funksjoner,beregninger,betingelser,objects,klasser,`
-      + `mapset,praktisk,Planlegging/testing,skjema,filformat,`
-      + `webapi,canvas,custom`).split(","),
-    Planlegging: ('Planlegging/firesteg,Planlegging/kravspek,Planlegging/planlegging,'
-    +'Planlegging/testing,Planlegging/dokumentasjon'
-    +'').split(","),
-    Sammendrag: ['uke34',
-    'uke35',
-    'uke36',
-    'uke37',
-    'uke38',
-    'uke4043',
-     ],
-    Fagplan: ['laereplanmal'],
-    Prøver: ['prove1','prove2p','proves1']
 
-  },
-};
+  console.log("heisan");
+  build("", map);
+  console.log(map);
+
+  module.exports = {
+   map
+  };
+
