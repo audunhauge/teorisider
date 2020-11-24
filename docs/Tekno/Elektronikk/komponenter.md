@@ -2,24 +2,15 @@
 title: Elektroniske komponenter
 ---
 
-<la-tex leqno="false" displaymode="true">\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</la-tex>
-
-Den får gjøre jobben inntil docusaurus støtter katex - neste stable release?
-
-Også nå en test på uml
-<uml-diagram uml="[a]->[b];
-                  [<table>Joe |x|y|z];
-                  [<start>t]->[a];
-                  [b]->[<choice>x];[x] yes->[a];
-                  [x] no ->[c];
-                  [b]->[<input>c];[c]->[e];[e]->[a]">
-</uml-diagram>
-
 
 ## Du skal kjenne til disse
 
-*  resistor
-*  transistor
+* Resistor  <elec-tronic type="resistor"></elec-tronic>
+* Transistor  <elec-tronic type="transistor"></elec-tronic>
+* Diode  <elec-tronic type="diode"></elec-tronic>
+* Inductor  <elec-tronic type="inductor"></elec-tronic>
+* Capacitor <elec-tronic type="capacitor"></elec-tronic>
+* LED  <elec-tronic type="led"></elec-tronic>
 
 
 ## Passive komponenter
