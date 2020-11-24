@@ -22,13 +22,13 @@ Mål for opplæringen er at eleven skal kunne
 * lese og bruke dokumentasjon og kode
 * definere [variabler](/) og velge hensiktsmessige datatyper 
 * tilordne uttrykk til variabler
-* programmere med enkle og [indekserte](array) variabler eller andre kolleksjoner av variabler
-* programmere med valg og [gjentakelser](lokker)
-* lage egne og bruke egne og andres [funksjoner](funksjoner) eller metoder med parametere
+* programmere med enkle og [indekserte](Programmering/array) variabler eller andre kolleksjoner av variabler
+* programmere med valg og [gjentakelser](Programmering/lokker)
+* lage egne og bruke egne og andres [funksjoner](Programmering/funksjoner) eller metoder med parametere
 * programmere funksjoner eller metoder som blir aktivisert av hendelser
 * utvikle og sette sammen delprogrammer
 * teste og finne feil i programmer ved å bruke vanlige teknikker
-* gjøre rede for hensikten med [objektorientert](klasser) utvikling og begrepene klasse, objekt og arv
+* gjøre rede for hensikten med [objektorientert](Programmering/klasser) utvikling og begrepene klasse, objekt og arv
 
 ### **Multimedieutvikling**
 

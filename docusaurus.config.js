@@ -44,11 +44,11 @@ module.exports = {
           items: [
             {
               label: 'Style Guide',
-              to: 'docs/doc1',
+              to: 'docs/Docosaurus/doc1',
             },
             {
               label: 'Latex',
-              to: 'docs/doc2/',
+              to: 'docs/Docosaurus/doc2/',
             },
           ],
         },

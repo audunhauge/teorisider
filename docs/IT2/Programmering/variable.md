@@ -5,7 +5,7 @@ sidebar_label: Variable
 slug: /
 ---
 
-Sjekk [Læreplanen](laereplanmal)
+Sjekk [Læreplanen](IT2/laereplanmal)
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
