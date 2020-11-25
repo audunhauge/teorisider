@@ -5,12 +5,14 @@ title: Elektroniske komponenter
 
 ## Du skal kjenne til disse
 
-* Resistor  <elec-tronic type="resistor"></elec-tronic>
-* Transistor  <elec-tronic type="transistor"></elec-tronic>
-* Diode  <elec-tronic type="diode"></elec-tronic>
-* Inductor  <elec-tronic type="inductor"></elec-tronic>
-* Capacitor <elec-tronic type="capacitor"></elec-tronic>
-* LED  <elec-tronic type="led"></elec-tronic>
+|Navn |Bilde|Beskrivelse|
+|-------|-----------|--|
+| Resistor | <elec-tronic type="resistor"></elec-tronic>| En passiv motstand|
+| Transistor  |<elec-tronic type="transistor"></elec-tronic>| Elektronisk bryter|
+| Diode | <elec-tronic type="diode"></elec-tronic>|Slipper strøm en vei|
+| Inductor  |<elec-tronic type="inductor"></elec-tronic>|Spole |
+| Capacitor |<elec-tronic type="capacitor"></elec-tronic>| Kapasitans |
+| LED  |<elec-tronic type="led"></elec-tronic> | Light emitting diode |
 
 
 ## Passive komponenter
