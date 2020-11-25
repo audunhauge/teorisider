@@ -20,6 +20,7 @@ Passive komponeneter er komponenter som ikke gir noen effektforsterkning, de opp
 hjelpekomponenter for halvlederkomponentene (transitorer og dioder).
 
 ### Motstander (resistorer)
+<elec-tronic type="resistor"></elec-tronic>|
 Motstanden har to tilkoblingsledninger (bein) og har ofte fargede ringer som forteller hvilken resistans den har. Symbolet
 ligner på den virkelige motstanden, og angis med en betegnelse og en verdi (f.eks. R1 og 27 k). R’en forteller oss at
 denne komponenten er en Motstand, indeksen 1 at det er motstand nr. 1 og 27 k at den har verdien 27 000 Ohm. Det
@@ -58,6 +59,8 @@ Motstander kan øve ulik motstand i kretsen avhengig av resistansen. En motstand
 og strømmen vil bli liten. En motstand med lav resistans vil øve liten motstand og strømmen vil bli større.
 
 ### Kondensatorer (capasitor)
+
+<elec-tronic type="capacitor"></elec-tronic>
 
 Kondensatorer er to metall- eller folieplater som ligger tett inntil hverandre uten at de berører
 hverandre. Jo større platene er, jo større verdi har kondensatoren. Kondensatorers verdi måles i
