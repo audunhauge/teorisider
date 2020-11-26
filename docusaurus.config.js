@@ -1,8 +1,8 @@
 const math = require('remark-math');
 const katex = require('rehype-katex');
 module.exports = {
-  title: 'Teorisider',
-  tagline: 'Teori til IT2',
+  title: 'Lærebøker',
+  tagline: 'Lærebøker for almenn',
   url: 'https://teorisider.onrender.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -10,13 +10,16 @@ module.exports = {
   organizationName: 'audunhauge', // Usually your GitHub org/user name.
   projectName: 'teorisider', // Usually your repo name.
   scripts: [
-    'Progress.js','Latex.js', 'UML.js', 'Quiz.js',
+    'https://teorisider.onrender.com/Progress.js',
+    'https://teorisider.onrender.com/Latex.js',
+    'https://teorisider.onrender.com/UML.js',
+    'https://teorisider.onrender.com/Quiz.js',
     '//unpkg.com/graphre/dist/graphre.js',
     '//unpkg.com/nomnoml/dist/nomnoml.js',
   ],
   themeConfig: {
     navbar: {
-      title: 'Teoribok IT2',
+      title: 'Lærebøker',
       logo: {
         alt: 'Teori Logo',
         src: 'img/logo.svg',
