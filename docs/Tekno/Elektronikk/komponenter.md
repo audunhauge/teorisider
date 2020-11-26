@@ -2,24 +2,17 @@
 title: Elektroniske komponenter
 ---
 
-<la-tex leqno="false" displaymode="true">\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</la-tex>
-
-Den får gjøre jobben inntil docusaurus støtter katex - neste stable release?
-
-Også nå en test på uml
-<uml-diagram uml="[a]->[b];
-                  [<table>Joe |x|y|z];
-                  [<start>t]->[a];
-                  [b]->[<choice>x];[x] yes->[a];
-                  [x] no ->[c];
-                  [b]->[<input>c];[c]->[e];[e]->[a]">
-</uml-diagram>
-
 
 ## Du skal kjenne til disse
 
-*  resistor
-*  transistor
+|Navn |Bilde|Beskrivelse|
+|-------|-----------|--|
+| Resistor | <elec-tronic type="resistor"></elec-tronic>| En passiv motstand|
+| Transistor  |<elec-tronic type="transistor"></elec-tronic>| Elektronisk bryter|
+| Diode | <elec-tronic type="diode"></elec-tronic>|Slipper strøm en vei|
+| Inductor  |<elec-tronic type="inductor"></elec-tronic>|Spole |
+| Capacitor |<elec-tronic type="capacitor"></elec-tronic>| Kapasitans |
+| LED  |<elec-tronic type="led"></elec-tronic> | Light emitting diode |
 
 
 ## Passive komponenter
@@ -27,9 +20,10 @@ Passive komponeneter er komponenter som ikke gir noen effektforsterkning, de opp
 hjelpekomponenter for halvlederkomponentene (transitorer og dioder).
 
 ### Motstander (resistorer)
+<elec-tronic type="resistor"></elec-tronic>|
 Motstanden har to tilkoblingsledninger (bein) og har ofte fargede ringer som forteller hvilken resistans den har. Symbolet
-ligner på den virkelige motstanden, og angis med en betegnelse og en verdi (f.eks. R1 og 27 k). R’en forteller oss at
-denne komponenten er en Motstand, indeksen 1 at det er motstand nr. 1 og 27 k at den har verdien 27 000 Ohm. Det
+ligner på den virkelige motstanden, og angis med en betegnelse og en verdi (f.eks. R1 og 27 k). R’en forteller oss at
+denne komponenten er en Motstand, indeksen 1 at det er motstand nr. 1 og 27 k at den har verdien 27 000 Ohm. Det
 spiller ingen rolle hvilken vei motstanden kobles. Legg
 merke til at komponenten ofte kalles resistor og dens verdi, resistans. I dette heftet har vi valgt de
 mer folkelige begrepet motstand, men velger å bruke resistans for verdien til motstanden siden
@@ -45,7 +39,7 @@ lett flytte.
 
 La oss ta utgangpunkt i en enkel elektrisk krets med et batteri, en motstand, R, og to ledninger.
 Batterispenningen er U, i følge Kirchoffs andre lov vil summen av potensialforskjellene (spenningsfeltet) langs en sluttet krets alltid være lik null. Mesteparten av spenningsfeltet blir derfor
-liggende over motstanden , mens en liten rest, U, ligger fordelt langs ledningene. En god elektrisk leder vil derfor så og si kortslutte det elektriske feltet.
+liggende over motstanden , mens en liten rest, U, ligger fordelt langs ledningene. En god elektrisk leder vil derfor så og si kortslutte det elektriske feltet.
 Figur 2.2 Fordeling av det elektriske feltet , U, i en enkel sluttet krets.
 Siden det er det elektriske feltet som driver elektronene framover, skulle en derfor tro at elektronene hadde problemer med å komme seg fram langs ledningene siden feltet i disse er så svakt,
 mens de i motstanden skulle få stor fart da feltet her er mye sterkere.
@@ -66,11 +60,13 @@ og strømmen vil bli liten. En motstand med lav resistans vil øve liten motstan
 
 ### Kondensatorer (capasitor)
 
+<elec-tronic type="capacitor"></elec-tronic>
+
 Kondensatorer er to metall- eller folieplater som ligger tett inntil hverandre uten at de berører
 hverandre. Jo større platene er, jo større verdi har kondensatoren. Kondensatorers verdi måles i
-Farad (fork. F). Farad er imidlertid en meget stor måleenhet. Det er derfor vanlig å brukeF
+Farad (fork. F). Farad er imidlertid en meget stor måleenhet. Det er derfor vanlig å brukeF
 (mikroFarad), nF (nanoFarad) og pF (pikoFarad) når vi angir verdien til en kondensator. Kondensatorens verdi kalles også kapasitans.
-Kondensatorer angis med en betegnelse og en verdi (f.eks. C1 og 0,1 F). C’en forteller oss at
+Kondensatorer angis med en betegnelse og en verdi (f.eks. C1 og 0,1 F). C’en forteller oss at
 denne komponenten er en Capasitor, indeksen 1 at det er kondensator nr. 1 som har verdien
 0,1 micro F.
 
