@@ -1,8 +1,8 @@
 const math = require('remark-math');
 const katex = require('rehype-katex');
 module.exports = {
-  title: 'Teorisider',
-  tagline: 'Teori til IT2',
+  title: 'Lærebøker',
+  tagline: 'Lærebøker for almenn',
   url: 'https://teorisider.onrender.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -20,7 +20,7 @@ module.exports = {
   ],
   themeConfig: {
     navbar: {
-      title: 'Teoribok IT2',
+      title: 'Lærebøker',
       logo: {
         alt: 'Teori Logo',
         src: 'img/logo.svg',
