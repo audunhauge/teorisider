@@ -1,5 +1,6 @@
 const math = require('remark-math');
 const katex = require('rehype-katex');
+
 module.exports = {
   title: 'Lærebøker',
   tagline: 'Lærebøker for almenn',
