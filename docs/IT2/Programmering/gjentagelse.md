@@ -1,5 +1,5 @@
 ---
-id: lokker
+id: gjentagelse
 title: Løkker
 sidebar_label: Løkker
 ---
