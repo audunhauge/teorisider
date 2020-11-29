@@ -12,7 +12,7 @@ title: Uke 35
 * [x] Lage en løkke fra 1 til 10 `for (let i=1; i < 11; i += 1) { ... }`
 * [x] Lage et nytt html-element med kode `let div = document.createElement('div');`
 * [x] Legge et element inn som barn av et annet element `divTall.append(div);`
-* [x] Les teori om [Løkker](../Programmering/lokker)
+* [x] Les teori om [Løkker](../Programmering/gjentagelse)
 
 Du kan teste deg selv med en quiz:  [Uke35](https://matte.oppgaver.net/quiz?qid=67541) .
 

@@ -51,6 +51,47 @@ elevTabell[4] = Lars;
 
 da vil js prøve å hente verdien fra en variabel med navnet Lars. Dette vil som oftest gi en feilmelding \(fordi variabelen Lars ikke er definert\).
 
+## Array functions
+
+Alle array objekter har tilgang til en rekke innebygde funksjoner.
+Dersom du lager en ny array,  
+`const a = [];` vil du kunne se alle
+de innebygde funksjonene ved å skrive `a.` i console på en nettleser.
+
+I vs-code vil du få følgende bilde:
+
+```javascript
+a.
+   |copyWithin | => (method) Array<any>.copyWithin(target: number,
+   |entries    |                start: number, end?: number): any[]
+   |every      |     /* enda mer forklarende text */
+   |fill       |
+   |filter     |
+   |find       |
+```
+
+Her kan du da lete etter en funksjon og lese beskrivelse rett i editoren.
+
+## De mest sentrale array funksjonene
+
+Lista viser de viktigste (de jeg bruker oftest)[^2] array funksjonene
+
+| Navn        | Beskrivelse                               | eksempel               |
+|-------------|-------------------------------------------|------------------------|
+| push(a)     | legger nytt element a bakerst i arrayet   |  arr.push(2) | 
+| pop()       | henter og fjerner siste element           |  siste = arr.pop() | 
+| sort()      | sorterer arrayet alfabetisk  [^1]           |  arr.sort | 
+| contains(a) | true dersom a finnes i arrayet            |  if(arr.contains("ole")) | 
+| find(f)     | finner verdi som oppfyller test |  arr.find(e => e >100) | 
+| join(sep)     | limer sammen bitene til en tekst med sep mellom   |  arr.join(",") | 
+| slice(start,slutt)    | lager kopi [start..slutt-1]   |  kopi = arr.slice() | 
+| reverse()  | snur rekkefølgen   |  arr.reverse()) | 
+| shift()    | henter ut og fjerner første element  | first = arr.shift() | 
+| unshift(a)    | legger inn nytt første-element  | arr.unshift(2) | 
+
+[^1]: Se [numerisk sortering](#funksjoner-som-endrer-verdiene-i-arrayet)
+[^2]: Egentlig bruker jeg map,reduce,replace,filter mest.
+
 ## Arbeide med tabeller
 
 Vi har tabellen elevTabell som vi nå ønsker å skrive ut
@@ -67,19 +108,27 @@ Vi har tabellen elevTabell som vi nå ønsker å skrive ut
 For å skrive ut alle elementene i tabellen bruker vi en løkke:
 
 ```javascript
-let elevTabell = [ "Ole","Per","Kari","Lise","Lars","Oda" ];
-let it;  // løkketelleren
+const elevTabell = [ "Ole","Per","Kari","Lise","Lars","Oda" ];
+let i;  // løkketelleren
+// løkketelleren defineres helst inne i løkka - har den på utsida her
+// for å fremheve den i forklaringen
 let ant = elevTabell.length;  // antall elementer
 for (i = 0; i < ant; i++) {
    let elev = elevTabell[i];
    console.log(elev);
 }
 
+// standard for løkke brukt på array
+for (let i=0; i < arr.length; i++) {
+   const verdi = arr[i];
+   // gjør noe med verdi
+}
+
 // du kan også bruke denne metoden (es2016)
-for (let elev of elevTabell) {
+for (const elev of elevTabell) {
   console.log(elev);
 }
-// i denne løkka tilsvarer elev elevTabell[i]
+// i denne løkka er: elev  <=> elevTabell[i]
 ```
 
 Her ser vi at alle Tabeller \(arrays\) har en innebygd egenskap med navnet length som gir deg antall elementer i tabellen.
@@ -127,7 +176,7 @@ let arrElever = [
 
 ## Mer om Array funksjoner
 
-### Funksjoner som endrer verdiene i arrayet <a id="funksjoner-som-endrer-verdiene-i-arrayet"></a>
+### Funksjoner som endrer verdiene i arrayet 
 
 ```javascript
 let a = [1,12,4,5,612,44,55,121212];
@@ -145,7 +194,7 @@ a.sort( (x,y) => y - x ); // a === [121212, 612, 55, 44, 12, 5, 4, 1]
 a.reverse();  // a === [121212, 55, 44, 612, 5, 4, 12, 1]
 ```
 
-### Funksjoner som gir en ny array som resultat <a id="funksjoner-som-gir-en-ny-array-som-resultat"></a>
+### Funksjoner som gir en ny array som resultat 
 
 ```javascript
 
@@ -171,7 +220,7 @@ let barePositive = a.every( e => e > 0);
 // barePositive === true , fordi alle tall i a er > 0
 ```
 
-### En innebygd travasering av array-elementer <a id="en-innebygd-travasering-av-array-elementer"></a>
+### En innebygd travasering av array-elementer 
 
 ```javascript
 
@@ -184,7 +233,7 @@ function doit(verdi, index) {
 }
 ```
 
-### Endring av alle verdier i en array med .map <a id="sortere-elementer-med-egenskaper"></a>
+### Endring av alle verdier i en array med .map 
 
 ```javascript
 // eksempel: vi har et array med årstall
@@ -194,7 +243,7 @@ let years = [ 1970, 1976, 1982, 1994, 2013 ];
 let x = years.map( e => e - 1970 );
 ```
 
-### Sortere elementer med egenskaper <a id="sortere-elementer-med-egenskaper"></a>
+### Sortere elementer med egenskaper 
 
 Du kan også sortere array som inneholder objekter.
 

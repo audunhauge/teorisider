@@ -1,5 +1,5 @@
 ---
-id: praktisk
+id: kodeeksempler
 title: Praktiske Eksempler
 ---
 

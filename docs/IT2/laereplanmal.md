@@ -23,7 +23,7 @@ Mål for opplæringen er at eleven skal kunne
 * definere [variabler](/) og velge hensiktsmessige datatyper 
 * tilordne uttrykk til variabler
 * programmere med enkle og [indekserte](Programmering/array) variabler eller andre kolleksjoner av variabler
-* programmere med valg og [gjentakelser](Programmering/lokker)
+* programmere med valg og [gjentakelser](Programmering/gjentagelse)
 * lage egne og bruke egne og andres [funksjoner](Programmering/funksjoner) eller metoder med parametere
 * programmere funksjoner eller metoder som blir aktivisert av hendelser
 * utvikle og sette sammen delprogrammer

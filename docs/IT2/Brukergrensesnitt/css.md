@@ -279,14 +279,6 @@ filter: sepia(60%);
 
 Disse virker på alle elementer, men noen gir bare mening i forhold til bilder.
 
-| uten filter | filter:hue-rotate\(90deg\); |
-| :--- | :--- |
-| ![](https://audunhauge.gitbooks.io/it1-informasjonsteknologi1/content/assets/Skjermbilde%202018-02-13%20kl.%2018.16.09.png) | ![](https://audunhauge.gitbooks.io/it1-informasjonsteknologi1/content/assets/Skjermbilde%202018-02-13%20kl.%2018.17.01.png) |
-| filter:sepia\(60%\); | filer:drop-shadow\(16px 16px 20px blue\); |
-| ![](https://audunhauge.gitbooks.io/it1-informasjonsteknologi1/content/assets/Skjermbilde%202018-02-13%20kl.%2018.20.16.png) | ![](https://audunhauge.gitbooks.io/it1-informasjonsteknologi1/content/assets/Skjermbilde%202018-02-13%20kl.%2018.21.47.png) |
-
-
-
 ### Layout med grid
 
 Lag en div med klasse wrapper `<div class="wrapper"> ... </div>`
