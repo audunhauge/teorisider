@@ -79,7 +79,7 @@ class Electronic extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ["ohm", "type"];
+    return ["ohm", "type","scale"];
   }
 
   attributeChangedCallback(name, oldValue, newValue) {

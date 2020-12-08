@@ -76,10 +76,15 @@ for likespenning, brukes de ofte til å skille trinnene i en forsterker. Andre g
 kortslutte vekselspenning til jord, eller sørge for å jevne ut spenningen når en ønsker å omdanne
 vekselspenning til likespenning.
 
+
+## Aktive komponenter
+Aktive komponeneter er komponenter som kan gi effektforsterkning, halvlederkomponenter (transitorer og dioder).
+
 ### Dioden
 
-Dioden har to terminaler (bein) som navnet sier (di
-betyr to), en katode og en anode.
+<elec-tronic type="diode" scale="0.1"></elec-tronic>
+
+Dioden har to terminaler (bein) som navnet sier (di betyr to), en katode og en anode.
 
 Dioden er en komponent som leder strøm den ene
 veien og omtrent ingen strøm den andre veien. Dersom vi kobler batteriets positive pol til anoden og
@@ -108,6 +113,8 @@ Dioden er også senere vært en viktig komponent i radio- og kommunikasjonstekni
 
 
 ### Transistoren
+
+<elec-tronic type="transistor"></elec-tronic>
 
 Transistoren har tre tilkoblingsledninger
 (bein). Disse betegnes som henholdsvis:
