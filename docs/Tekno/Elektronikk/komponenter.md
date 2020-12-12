@@ -58,6 +58,18 @@ med sperrer som hindrer kulene i fallet. Kulene vil som elektronene, avgi energi
 Motstander kan øve ulik motstand i kretsen avhengig av resistansen. En motstand med høy resistans vil øve stor motstand 
 og strømmen vil bli liten. En motstand med lav resistans vil øve liten motstand og strømmen vil bli større.
 
+#### Motstander i serie
+
+Dersom du kobler flere motstander sammen i serie ( --A---B---C--), kan
+du beregne totalmotstanden ved å legge sammen A+B+C.
+
+Egentlig så bidrar ledningene mellom resistor A,B,C med en liten motstand, men den
+er så liten at den vanligvis kan neglisjeres (ignoreres).
+
+En liten selvtest:
+
+<quest-ion qid="84278"></quest-ion>
+
 ### Kondensatorer (capasitor)
 
 <elec-tronic type="capacitor"></elec-tronic>
