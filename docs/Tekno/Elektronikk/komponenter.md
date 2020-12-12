@@ -190,3 +190,18 @@ føres gjennom
 ledninger til en
 elektronisk forsterker. Forsterkeren forsterker opp de små elektriske strømmene slik at de blir
 store nok til å drive en høyttaler
+
+
+### NPN transistoren
+
+Den bipolare transistoren består av tre sjikt lagt ved
+siden av hverandre. To N-dopet sjikt (N-sjikt) med et
+tynt P-dopet sjikt (P-sjikt) i midten. Slike transitorer kalles derfor NPN-transistorer.
+![npn og pnp](/img/npn.png)
+
+### PNP transistoren
+En kan også lage transistorer som består av to P-sjikt med et tynt N-sjikt mellom. Slike kalles derfor PNP-transistorer. Disse to typene transistorer fungerer omtrent på samme måte.
+
+Årsaken til at begge typene
+tilbys, er at de i enkelte kretsløsninger utfyller hverandre. I fortsetningen skal vi stort sett bruke
+NPN-transistorer.
