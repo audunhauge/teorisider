@@ -82,7 +82,7 @@ Aktive komponeneter er komponenter som kan gi effektforsterkning, halvlederkompo
 
 ### Dioden
 
-<elec-tronic type="diode" scale="0.1"></elec-tronic>
+<elec-tronic type="diode" scale="0.6"></elec-tronic>
 
 Dioden har to terminaler (bein) som navnet sier (di betyr to), en katode og en anode.
 
@@ -145,29 +145,33 @@ som elektrisk strømbryter. La oss først se på transistoren brukt som bryter.
 Transistoren har tre terminaler (bein). Dersom vi tenker på transistoren som en bryter vil to av terminalene tilsvare de to strømførende ledningene til bryteren (figur 2.19 A). Lampa vil ikke lyse
 siden ingen trykker på knappen (b).
 
-Vi bytter ut bryteren med en transistor (figur 2.19 B) og ser at pæra fortsatt ikke lyser. Dette skyldes at styreterminalen (basen) til transistoren ikke er tilkoblet.
+Vi bytter ut bryteren med en transistor (figur) og ser at pæra fortsatt ikke lyser. Dette skyldes at styreterminalen (basen) til transistoren ikke er tilkoblet.
 På figur 2.19 C har vi byttet ut tegningene av transistoren, lyspæra og batteriet med symboler. Vi
 ser at styreterminalen, basen, på transistoren ikke er tilkoblet noe sted og pæra lyser ikke. Transistoren oppfører seg som en åpen bryter som ikke leder strøm.
 
-Figur 2.19 Transistoren som bryter (av).
+![forsterker](/img/transbryt.png)
 
-Hva får så pæra til å lyse? På figur 2.20 A) har vi trykket på bryteren slik at vi får en sluttet krets,
+
+
+Hva får så pæra til å lyse? På figur A) kan vi trykket på bryteren slik at vi får en sluttet krets,
 dvs. at det kan gå strøm fra batteriet, gjennom bryteren, lyspæra og tilbake til batteriet, og lyspæra
 lyser.
 
-Figur 2.20 Transistoren som bryter (på).
 
-På figur 2.20 B) har vi byttet ut bryteren med en transistor. Vi har dessuten ført en ledning fra
+På figur B) har vi byttet ut bryteren med en transistor. Vi kan da føre en ledning fra
 basen (styreterminalen) på transistoren opp til + polen på batteriet. Det som da skjer er at det går
 en liten strøm fra + polen på batteriet og inn i basen på transistoren. Denne strømmen gjør at transistor-”bryteren” åpner og leder den store strømmen som får lyspæra til å lyse. Vi har dessuten
 lagt inn en motstand i baseledningen for å begrense strømmen.
-Den som ser nøye på transistorsymbolet i figur 2.20 C), ser at det sitter en liten diode mellom
+Den som ser nøye på transistorsymbolet i figur C), ser at det sitter en liten diode mellom
 basen (b) og emitteren (e). Når vi legger basen til plusspolen på batteriet, begynner denne dioden
 å lede strøm. Dette medfører at transistor-”bryteren” åpner og den store strømmen begynner å gå
 mellom collectoren og emitteren. I datamaskiner brukes transistoren nesten utelukkende som
 bryter.
 #### Transistoren som forsterker
 Den andre viktige anvendelsen for transistorer er som signalforsterkere.
+
+![forsterker](/img/amplifier.gif)
+
 
 De fleste har brukt
 forsterkere i form
