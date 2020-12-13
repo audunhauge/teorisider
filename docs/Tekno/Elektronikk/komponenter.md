@@ -70,6 +70,29 @@ En liten selvtest:
 
 <quest-ion qid="84278"></quest-ion>
 
+#### Motstander i paralell
+
+Dersom du kobler motstander sammen i paralell
+
+```js
+(a) --+-----+------+
+      |     |      |
+      A     B      C
+      |     |      |
+(b) --+-----+------+
+```
+kan du **ikke** bare legge sammen A+B+C.
+Du kan gjøre et raskt overslag over motstanden: den **må** være
+mindre enn den minste av A,B,C. Dersom de er like store (A=B=C) så
+er motstanden 1/3 (deler på antallet).
+
+Den riktige måten å beregne motstanden for en slik krets - er å skifte til
+ledningsevne (som er 1/motstand). Ledningsevne kan du summere når de er i paralell
+og finne samla ledningsevne som (1/A + 1/B + 1/C). Nå har du ledningsevnen
+X for kretsen mellom (a) og (b) i skissen. Da må motstanden være 1/X.
+
+<quest-ion qid="84280"></quest-ion>
+
 ### Kondensatorer (capasitor)
 
 <elec-tronic type="capacitor"></elec-tronic>
