@@ -149,7 +149,7 @@ Vi bytter ut bryteren med en transistor (figur) og ser at pæra fortsatt ikke ly
 På figur 2.19 C har vi byttet ut tegningene av transistoren, lyspæra og batteriet med symboler. Vi
 ser at styreterminalen, basen, på transistoren ikke er tilkoblet noe sted og pæra lyser ikke. Transistoren oppfører seg som en åpen bryter som ikke leder strøm.
 
-![forsterker](/img/transbryt.png)
+![bryter](/img/transbryt.png)
 
 
 
