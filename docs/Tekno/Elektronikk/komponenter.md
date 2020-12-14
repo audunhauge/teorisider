@@ -58,6 +58,41 @@ med sperrer som hindrer kulene i fallet. Kulene vil som elektronene, avgi energi
 Motstander kan øve ulik motstand i kretsen avhengig av resistansen. En motstand med høy resistans vil øve stor motstand 
 og strømmen vil bli liten. En motstand med lav resistans vil øve liten motstand og strømmen vil bli større.
 
+#### Motstander i serie
+
+Dersom du kobler flere motstander sammen i serie ( --A---B---C--), kan
+du beregne totalmotstanden ved å legge sammen A+B+C.
+
+Egentlig så bidrar ledningene mellom resistor A,B,C med en liten motstand, men den
+er så liten at den vanligvis kan neglisjeres (ignoreres).
+
+En liten selvtest:
+
+<quest-ion qid="84278"></quest-ion>
+
+#### Motstander i paralell
+
+Dersom du kobler motstander sammen i paralell
+
+```js
+(a) --+-----+------+
+      |     |      |
+      A     B      C
+      |     |      |
+(b) --+-----+------+
+```
+kan du **ikke** bare legge sammen A+B+C.
+Du kan gjøre et raskt overslag over motstanden: den **må** være
+mindre enn den minste av A,B,C. Dersom de er like store (A=B=C) så
+er motstanden 1/3 (deler på antallet).
+
+Den riktige måten å beregne motstanden for en slik krets - er å skifte til
+ledningsevne (som er 1/motstand). Ledningsevne kan du summere når de er i paralell
+og finne samla ledningsevne som (1/A + 1/B + 1/C). Nå har du ledningsevnen
+X for kretsen mellom (a) og (b) i skissen. Da må motstanden være 1/X.
+
+<quest-ion qid="84280"></quest-ion>
+
 ### Kondensatorer (capasitor)
 
 <elec-tronic type="capacitor"></elec-tronic>
@@ -190,3 +225,18 @@ føres gjennom
 ledninger til en
 elektronisk forsterker. Forsterkeren forsterker opp de små elektriske strømmene slik at de blir
 store nok til å drive en høyttaler
+
+
+### NPN transistoren
+
+Den bipolare transistoren består av tre sjikt lagt ved
+siden av hverandre. To N-dopet sjikt (N-sjikt) med et
+tynt P-dopet sjikt (P-sjikt) i midten. Slike transitorer kalles derfor NPN-transistorer.
+![npn og pnp](/img/npn.png)
+
+### PNP transistoren
+En kan også lage transistorer som består av to P-sjikt med et tynt N-sjikt mellom. Slike kalles derfor PNP-transistorer. Disse to typene transistorer fungerer omtrent på samme måte.
+
+Årsaken til at begge typene
+tilbys, er at de i enkelte kretsløsninger utfyller hverandre. I fortsetningen skal vi stort sett bruke
+NPN-transistorer.
