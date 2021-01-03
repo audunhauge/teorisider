@@ -2,7 +2,6 @@
 id: variable
 title: Variable og funksjoner
 sidebar_label: Variable
-slug: /
 ---
 
 Sjekk [Læreplanen](IT2/laereplanmal)
