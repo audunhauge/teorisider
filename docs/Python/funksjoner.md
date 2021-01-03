@@ -121,7 +121,6 @@ while i < 300:
 
 # viser beregna x verdi (lengde på kastet)
 alert(b.x)
-
 ```
 
 Test  om koden virker:

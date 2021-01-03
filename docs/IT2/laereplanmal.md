@@ -20,7 +20,7 @@ Mål for opplæringen er at eleven skal kunne
 Mål for opplæringen er at eleven skal kunne
 
 * lese og bruke dokumentasjon og kode
-* definere [variabler](/) og velge hensiktsmessige datatyper 
+* definere [variabler](Programmering/variable) og velge hensiktsmessige datatyper 
 * tilordne uttrykk til variabler
 * programmere med enkle og [indekserte](Programmering/array) variabler eller andre kolleksjoner av variabler
 * programmere med valg og [gjentakelser](Programmering/gjentagelse)

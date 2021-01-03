@@ -4,8 +4,6 @@ title: Variable og funksjoner
 sidebar_label: Variable
 ---
 
-Sjekk [Læreplanen](IT2/laereplanmal)
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
