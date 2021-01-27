@@ -16,6 +16,7 @@ module.exports = {
     'https://teorisider.onrender.com/UML.js',
     'https://teorisider.onrender.com/Quiz.js',
     'https://teorisider.onrender.com/Electronic.js',
+    'https://teorisider.onrender.com/fixup.js',
     '//unpkg.com/graphre/dist/graphre.js',
     '//unpkg.com/nomnoml/dist/nomnoml.js',
   ],
