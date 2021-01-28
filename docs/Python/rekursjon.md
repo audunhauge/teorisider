@@ -7,12 +7,15 @@ title: Rekursjon
 Vi skal programmere en løsning som finner nullpunkt til en gitt funksjon.
 Jeg har valgt `f(x) = x³ +2` som eksempelfunksjon.
 
-math 
-f(x) = x^2+2dfgdfgdfg
-dfgdfg
+```math
+f(x) = x^2+2
+sin(x)/cos(x)
+$\frac{1}{2}$
 dfg
 dfg
-dfg
+```
+
+
 
 Jeg velger halveringsmetoden, vi antar at `f(a)*f(b) < 0` slik at vi har minst
 en kryssing av x-aksen, antar også at funksjonen er kontinuerlig.

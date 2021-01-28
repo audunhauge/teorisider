@@ -28,3 +28,28 @@ div.box {
   display:grid;
   grid-template-columns: 1fr 1fr;
 }
+
+div.prism-code.language-math {
+  position: relative;
+  counter-reset: line;
+}
+div.prism-code.language-math > div {
+  background-color: aliceblue !important;
+}
+div.prism-code.language-math div.token-line {
+  color: black !important;
+}
+
+div.prism-code.language-math div.token-line:before {
+  position: relative;
+  counter-increment: line;      
+  content: counter(line);
+  left: -8px;
+  width: 3rem;
+  height: 1rem;
+  color: blue;
+}
+
+span.katex-html[aria-hidden] {
+  /*display:none;*/
+}
