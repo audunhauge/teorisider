@@ -1,5 +1,6 @@
 const math = require("remark-math");
 const katex = require("rehype-katex");
+const path = require('path');
 
 module.exports = {
   title: "Lærebøker",
@@ -20,6 +21,7 @@ module.exports = {
     "//unpkg.com/graphre/dist/graphre.js",
     "//unpkg.com/nomnoml/dist/nomnoml.js",
   ],
+  plugins: [path.resolve(__dirname, 'kakex')],
   stylesheets: [
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
