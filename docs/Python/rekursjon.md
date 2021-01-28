@@ -7,6 +7,13 @@ title: Rekursjon
 Vi skal programmere en løsning som finner nullpunkt til en gitt funksjon.
 Jeg har valgt `f(x) = x³ +2` som eksempelfunksjon.
 
+math 
+f(x) = x^2+2dfgdfgdfg
+dfgdfg
+dfg
+dfg
+dfg
+
 Jeg velger halveringsmetoden, vi antar at `f(a)*f(b) < 0` slik at vi har minst
 en kryssing av x-aksen, antar også at funksjonen er kontinuerlig.
 
@@ -23,6 +30,14 @@ I eksemplet under er endpunktene **a** og **b** de som endrer seg - merk
 at solve(a,b) bruker seg selv med solve(a,c) eller solve(c,b). **c** er midtpunktet
 og metoden velger enten a eller b avhengig av hvor nullpunktet må være.
 
+I en rekursiv funksjon er det helt nødvendig å starte med **slutt-kriteriet** for funksjonen
+før den kaller opp seg selv (starter seg selv på nytt).
+Uten betingelse for slutt vil funksjonen kalle seg selv opp i en uendelig løkke
+(som tar brått slutt når maskinen ikke har mer minne tilgjebgelig).
+
+For solve() har jeg to kriterier for å avslutte - enten antall iterasjoner er > 200
+eller avstand mellom a,b er mindre enn 0.000...1 (ønska presisjon).
+
 
 ```python
 from browser import window,alert
@@ -37,7 +52,7 @@ b = 1
 # skal plotte punktene som er undersøkt
 punkter = [ [a,fu(a)] , [b,fu(b)] ]
 
-# halveringsmetoden, teller antall ganger vi halverer med n
+# halveringsmetoden, n teller antall ganger vi halverer.
 # a er nedre grense, b er øvre, antar at f(a) * f(b) < 0 dvs motsatt fortegn
 # merk at denne løsningen regner ut fu() til samme x verdi flere ganger
 #   med litt kløkt kunne vi ta vare på de y-verdiene vi har beregna
@@ -65,16 +80,19 @@ def solve(a,b,n=0):
 # tankegangen er:  
 #    jeg har en løsning som finner nullpunkt mellom a,b 
 #    dersom avstanden (a-b) er liten - da er det et nullpunkt
-#    ellers så beregner jeg et midtpunkt og bruke løsningen på et mindre interval
+#    ellers så beregner jeg et midtpunkt og bruker løsningen på et mindre intervall
 #    jeg må bare sjekke at intervallet inneholder en kryssing av x-aksen
 #    dvs f(a)*f(c) er negativ eller f(c)*f(b) er negativ
 #    trenger bare sjekke en av dem, da vi forutsetter at f(a)*f(b) < 0
 
+# solve() gir tilbake to verdier, nullpunkt og antall iterasjoner
 (nullpunkt,iter) = solve(a,b)
 
+# vis svarene
 alert(nullpunkt)
 alert(iter)
 
+# tegn grafen
 options = {
  "target"  :"#fu",
  "data"  : [
