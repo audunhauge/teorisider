@@ -11,7 +11,9 @@ Nullpunktene til r(x) vil være de samme som for f(x).
 Der g(x) har nullpunkt har r(x) vanligvis bruddpunkt eller et udefinert punkt.
 
 ## Eksempel
- $$ r(x) = \frac{x-2}{x-1} $$
+```math
+r(x) = \frac{x-2}{x-1} $$
+```
 
 plot[(x-2)/(x-1)]
 
@@ -34,5 +36,7 @@ Dette er logisk da vi har (1000-2) / (1000 -1) for x=1000 som blir ~ 1.
 Denne grenseverdien kaller vi en horisontal asymptote.
 
 En eventuell horisontal asymptote finnes lett dersom vi ignorerer konstantene:
-  $$ r(x) \approx \frac{x}{x} $$
+```math
+  r(x) \approx \frac{x}{x}
+```
 og ser at r(x) ~ x/x = 1 når x er veldig stor
