@@ -16,7 +16,6 @@ dfg
 ```
 
 
-
 Jeg velger halveringsmetoden, vi antar at `f(a)*f(b) < 0` slik at vi har minst
 en kryssing av x-aksen, antar også at funksjonen er kontinuerlig.
 
