@@ -38,18 +38,87 @@ div.prism-code.language-math > div {
 }
 div.prism-code.language-math div.token-line {
   color: black !important;
+  position: relative;
 }
 
 div.prism-code.language-math div.token-line:before {
-  position: relative;
+  position: absolute;
   counter-increment: line;      
   content: counter(line);
   left: -8px;
+  top:2px;
   width: 3rem;
-  height: 1rem;
-  color: blue;
+  height: 12px;
+  color: rgba(0, 0, 255, 0.466);
 }
+
 
 span.katex-html[aria-hidden] {
   /*display:none;*/
+}
+
+
+div.mmath {
+  display:grid;
+  grid-template-columns: 1fr 6fr 3fr;
+  padding-top:2px;
+}
+
+div.mmath > span {
+  display: inline-block;
+  position: relative;
+}
+
+/*  comments for math */
+div.mmath > span:nth-of-type(5),
+div.mmath > span:nth-of-type(3) {
+  color:green;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+/*  equation number */
+div.mmath > span:nth-of-type(1) {
+  color:blue;
+  font-size: 0.9em;
+}
+
+
+div.language-math {
+  margin: 1rem;
+  margin-left:2rem;
+  counter-reset: mlines;
+}
+
+div.language-math div.mmath {
+  padding-top:5px;
+}
+
+div.language-math div.mmath {
+  grid-template-columns: 1fr 10fr 1fr;
+}
+
+div.language-math div.mmath > span {
+  text-align: center;
+}
+
+div.language-math div.mmath {
+  grid-template-columns: 2fr 10fr 1fr 10fr 7fr;
+}
+
+div.language-math div.mmath.simple {
+  grid-template-columns: 2fr 10fr 7fr;
+}
+div.language-math div.mmath.simple > span:nth-of-type(2) {
+  text-align: center;
+}
+
+div.language-math div.mmath > span:nth-of-type(2) {
+  text-align: right;
+}
+div.language-math div.mmath > span:nth-of-type(3) {
+  text-align: center;
+}
+div.language-math div.mmath > span:nth-of-type(4) {
+  text-align: left;
 }

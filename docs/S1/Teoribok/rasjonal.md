@@ -12,7 +12,7 @@ Der g(x) har nullpunkt har r(x) vanligvis bruddpunkt eller et udefinert punkt.
 
 ## Eksempel
 ```math
-r(x) = \frac{x-2}{x-1} $$
+r(x) = \frac{x-2}{x-1} 
 ```
 
 plot[(x-2)/(x-1)]

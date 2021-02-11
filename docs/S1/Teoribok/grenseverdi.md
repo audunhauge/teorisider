@@ -1,7 +1,6 @@
 ---
 title: Grenseverdier
 ---
-
 ## 6.3 Grenseverdi for ubestemt uttrykk
 
 Gitt
@@ -18,13 +17,14 @@ f(-0.01) = 1.99
 f(-0.001) = 1.999
 ```
 
+
 Det ser ut som om vi får f(x) = 2 når x går mot 0.
 
 Dette skriver vi slik:
 
 ```math
- \lim_{x \to 0} f(x) = 2 
- ```
+lim(f(x),x,0)
+```
 
 Og vi leser det slik:
 
@@ -32,26 +32,33 @@ Og vi leser det slik:
 
 ## Regning med grenseverdier
 
-gitt 
-
-```math
-f(x) = \frac{(2x^3+5x)}{x} 
-```
+gitt $$ f(x) = \frac{(2x^3+5x)}{x} $$
 
 
 Finn grenseverdien når x går mot 0.  
 
 Vi kan forkorte f(x)
-```math
+
+```math 
 f(x)=(2x^3+5x)/x
 f(x)= 2x^2+5: |/x
 f(0) = 2*0 + 5
 f(0) = 5
+```
 
+```math 
 lim(f(x),x,0)
 lim((2x^3+5x)/x,x,0)
-lim((2x^2+5),x,0)
-2*0^2+5
+lim((2x^2+5),x,0):forkorter
+2*0^2+5:setter inn grensen
 5
 lim(f(x),x,0) = 5
 ```
+
+
+
+
+
+
+
+
