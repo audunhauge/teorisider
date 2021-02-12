@@ -35,7 +35,8 @@ function cleanUpMathLex(code) {
 const mathParse = (e) => {
   try {
     return MathLex.parse(e);
-  } catch(e) {
+  } catch(err) {
+    console.log(err);
     return e
   }
 }
@@ -43,7 +44,8 @@ const mathParse = (e) => {
 const mathRender = (e) => {
   try {
     return MathLex.render(e,"latex");
-  } catch(e) {
+  } catch(err) {
+    console.log(err);
     return e
   }
 }
