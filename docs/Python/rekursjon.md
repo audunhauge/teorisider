@@ -7,15 +7,6 @@ title: Rekursjon
 Vi skal programmere en løsning som finner nullpunkt til en gitt funksjon.
 Jeg har valgt `f(x) = x³ +2` som eksempelfunksjon.
 
-```math
-f(x) = x^2+2
-sin(x)/cos(x)
-$\frac{1}{2}$
-dfg
-dfg
-```
-
-
 Jeg velger halveringsmetoden, vi antar at `f(a)*f(b) < 0` slik at vi har minst
 en kryssing av x-aksen, antar også at funksjonen er kontinuerlig.
 
@@ -108,6 +99,12 @@ options = {
 window.functionPlot(options)
 
 ```
+
+I koden har jeg en unødvendig funksjonsberegning - resultatet blir aldri brukt.
+Dersom du skriver koden i *visual studio code* ville denne være markert med grå farge.
+Alle ubrukte variable markeres slikt. Vanligvis har du da feil i koden eller har
+lagt en plan som du har endra/ikke fulgt. Uansett - se over og fjern variabelen
+eller ta den i bruk (dersom tanken var riktig, men ufullført).
 
 Du kan teste koden her:
 
