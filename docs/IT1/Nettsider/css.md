@@ -172,10 +172,23 @@ Dette er en liste over basis-egenskaper i css - disse skal du kunne.
 * width,height - størrelse \(typisk på en div\)
 * background-image - bakgrunsbilde
 * margin marg rundt elementet
+* border en kantlinje rundt elementet
 
 
+### Størrelse
 
-### CSS-selectors
+Du kan overstyre størrelsen til et element med egenskapene
+* width  bredde
+* height  høyde
+* padding  luft rundt innhold (inne i elementet)
+* margin   luft rundt diven (utforbi elementet)
+
+I tillegg kan du sette begrensninger på width, height
+* min-width:12rem;
+* max-width:800px;
+* ditto for height
+
+### css-selectors
 
 Når du skriver en css-regel bruker du en css-selector til å bestemme hvilket/hvilke elementer regelen skal gjelde for.
 
@@ -199,8 +212,7 @@ Dette er et eksempel på en **tag** - selector \(slik som div span p article tab
 ```
 
 Denne selectoren velger et element i dokumentet som har **id="main"** , f.eks &lt;div id="main"&gt;. Alle tagger kan gis en id, men hver id skal være unik - bare brukes en gang.
-
-**class-selector**
+absolute
 
 ```css
 .skyer {
@@ -420,6 +432,36 @@ Da vil følgende css sentere div.child midt inne i div.parent.
 ```
 
 
+### Plassering av elementer
+
+Du kan ta kontroll over plasseringen til elementer.
+Bruk **left,top,bottom,right** til å angi hvilken kant du plasserer i forhold til.
+`left:10px;`  betyr 10px fra venstre kant.
+
+#### Position absolute
+
+```css
+#test {
+  position:absolute;
+  left: 10px;
+  top: 10px;
+}
+```
+Denne regelen vil plassere elementet med id="test" 10px fra venstre kant og 10px fra toppen.
+
+
+
+#### Position relative
+
+```css
+#test {
+  position:relative;
+  left: 10px;
+  top: 10px;
+}
+```
+Her angir du en forskyvning fra der hvor nettleseren ville ha plassert elementet.
+
 
 ### CSS Nummerering
 
@@ -427,6 +469,20 @@ Vanligvis bruker du `<ol> <li>` for å lage nummererte lister. Du får da en lis
 
 1. Punkt ein
 2. Punkt to
+
+
+#### Alternativer til 1,2,3...
+
+Du kan lage nummererte lister med andre tellemåter på denne måten:
+
+```css 
+ol {
+  list-style-type: upper-alpha;
+}
+```
+
+Typen kan være en av **decimal,lower-roman,upper-roman, ...**  
+Du finner komplett liste på [mdn](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type)
 
 Dersom du ønsker å nummerere andre elementer enn ol og li kan du bruke følgende css som et utgangspunkt:
 
@@ -462,6 +518,40 @@ Du kan velge fra denne lista med nummereringer:
 * lower-greek: α, β, γ ...
 * lower-alpha, lower-latin: a,b,c...
 * upper-xxx \(roman,greek,alpha,latin\)
+
+#### En fancy nummerert liste
+
+```css
+ol {
+  max-width: 350px;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 40px;
+}
+ol li {
+  margin: 0 0 0.5rem 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+ol li::before {
+  content: counter(my-awesome-counter);
+  color: #fcd000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 32px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  transform: rotate(-10deg);
+  background: black;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px 0 #999;
+}
+```
 
 ### Media queries
 
