@@ -7,9 +7,7 @@ sidebar_label: Variable
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-
-
-En variabel i javascriptEn variabel er en navngitt beholder som kan inneholde en verdi. Denne verdien kan hentes ut \(brukes i en beregning\) eller endres/oppdateres.
+En variabel er en navngitt beholder som kan inneholde en verdi. Denne verdien kan hentes ut \(brukes i en beregning\) eller endres/oppdateres.
 
  I javascript må variabelnavn begynne med en bokstav. De kan inneholde bokstaver, tall \_ og $. Du kan ikke bruke punktum eller mellomrom. 
 
@@ -71,7 +69,7 @@ En funksjon oppfører seg på mye av den samme måten som et vanlig program - me
 
 Objektorientert programmering går som regel ut på å binde sammen funksjoner og data på en logisk måte, et elev-objekt har funksjoner for å skrive ut elevdata osv. 
 
-Mange språk har samlinger av funksjoner i funksjonsbibliotek eller klasser \(tenk på Math i actionscript\). 
+Mange språk har samlinger av funksjoner i funksjonsbibliotek eller klasser \(eksempel er Math i js\). 
 
 Ofte er det nødvendig å sende verdier inn til funksjonene, disse verdiene kalles for parametre eller argumenter til funksjonen. Et eksempel på dette er sinus funksjonen.
 
