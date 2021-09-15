@@ -153,6 +153,39 @@ Juster på avstanden fra venstre og fra topp slik at du får plassert diven midt
 
 
 
+## Bruk av semantiske elementer
+
+Du kan lett lage en webside med **div** som hoved-byggekloss - men da blir
+tanken bak litt skjult for den som skal vedlikeholde sida.
+
+Derfor vil mange lage sider med tags som gir mer info om tanken bak strukturen.  
+Disse kalles ofte for **semantiske** elementer. 
+En vanlig tag slik som **div** forteller lite om hva innholdet er, mens
+en tag slik som **address** gir grei beskjed om at innholdet skal være en adresse.
+
+I **html** kan du bruke disse tags som fungerer noe likt div (med en del avvik).
+
+* **header**  En overskrift/banner/innledning
+* **nav**  navigasjonslinker meny/innholdsliste/index
+* **main** hovedinnhold - sentralt tema for websida
+* **section** en inndeling - bør ha en heading
+* **article**  litt som section, men kan stå alene (som en blogpost)
+* **aside**  litt perifert ekstra-stoff
+* **footer**  typisk noe om forfatter, adresse osv
+* **figure** inneholder et bilde og vanligvis en figcaption
+* **h1 .. h6**   overskrifter 
+
+De brukes typisk til å bygge opp denne strukturen
+
+![Example banner](/img/structural.gif)
 
 
+### Noen flere semantiske elementer
 
+* **mark**  tilsvarere et ord markert med gul tusj
+* **summary** brukes som ledetekst inne i **details**
+* **time**  filmen starter, siste frist osv.
+* **address**  typisk brukt inne i en **footer**
+* **details**  ekstra tekst som vises dersom klikk på **summary**
+* **figcaption** brukes i **figure**
+* **dialog**  brukes for lage tekst til popups og lignende
