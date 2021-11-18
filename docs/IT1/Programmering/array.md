@@ -51,6 +51,28 @@ elevTabell[4] = Lars;
 
 da vil js prøve å hente verdien fra en variabel med navnet Lars. Dette vil som oftest gi en feilmelding \(fordi variabelen Lars ikke er definert\).
 
+## Metoder for å lage en array
+
+### En tekst (string) konvertert til array
+
+Gitt at du har en string som vist under
+
+```js
+const tall1 = "123456";
+```
+
+og du vil gjøre den om til en array - du vil ha ```["1","2","3","4","5","6"]``` .  
+Da kan du bruke en av disse metodene:
+
+
+```js
+const siffer1 = tall1.split('');
+const siffer2 = Array.from(tall1);
+const siffer3 = [... tall1];
+```
+
+Alle tre vil lage en array lik ```["1","2","3","4","5","6"]``` .
+
 ## Array functions
 
 Alle array objekter har tilgang til en rekke innebygde funksjoner.

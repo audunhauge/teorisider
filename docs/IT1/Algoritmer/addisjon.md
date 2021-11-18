@@ -27,6 +27,12 @@ tall2 |_____|           |_| |_| |_| |_| |_| |_|
 
 Vis metode skal bare virke dersom bruker har skrevet inn tall1 og tall2.
 
+#### Teoristoff du trenger
+* [Array](../Programmering/array) - sjekk spesielt hvordan du kan gjøre text om til en array.
+* [Betingelser](../Programmering/betingelser) - sjekk if-setninger.
+
+
+
 
 #### For å lage rutenettet som skal vise hvert siffer fra de to tallene bruker vi denne html-koden:
 
