@@ -18,8 +18,8 @@ Ved klikk på knappen (Vis binært) skal vi få denne visningen:
 ```bs
                         
 tall |_____|           
-                        
-(Vis metode)            metode
+                        metode
+(Vis metode)            
                         |_| |_| |_| |_| |_| |_|
                                             (nxt)
 ```
@@ -73,11 +73,5 @@ nxt.onclick = () => {
 Første forsøk legger vi inn hele koden i vis.onclick
 
 Senere skal vi ta ett og ett binærsiffer slik som vi gjorde for addisjon
-
-
-
-
-
-
 
 
