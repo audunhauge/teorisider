@@ -113,3 +113,30 @@ if(alder === 10) {
 console.log("Du har ", melding)
 ```
 
+### Kortform for if
+
+Noen ganger ønsker vi å lagre en av to mulige verdier i en variabel, eller
+vise en av to mulige verdier i et felt.
+
+Anta at pris skal være 100 kr dersom alder er mindre enn 16, ellers 200 kr.
+Med en vanlig if kan vi skrive dette:
+
+```js
+let pris;
+if (alder < 16) {
+  pris = 100;
+} else {
+  pris = 200;
+}
+```
+
+Dette kan av og til være uheldig dersom denne relativt store plassbruken fjerner fokus
+fra det som er viktig i koden (det er lettere å forstå kode som kan fanges i ett blikk).
+
+Da har vi en alternativ skrivemåte:
+```js
+const pris = (alder< 16) ? 100 : 200;
+```
+
+Dersom testen (alder< 16) er sann, da blir prisen 100 (verdien rett etter **?** ), ellers
+blir prisen 200 (verdien etter **:** )

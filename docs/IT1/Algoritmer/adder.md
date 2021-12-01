@@ -13,10 +13,15 @@ En adder er en elektronisk krets som kan legge sammen to binærtall.
 Denne operasjonen utgjør en sentral del av oppgavene til en CPU.
 Vi skal lage en side som simulerer virkemåten til en del av en slik adder.
 
+Inne i en CPU vil en elektronisk krets av transistorer utføre det arbeidet vi simulerer.
+For å få en rask krets brukes ofte andre metoder enn den vi simulerer.  
+I vår krets må vi vente på at carry (mente) skal sendes fra boks til boks.
+Dermed vil addisjon av 8bitpar ta 8 x tiden for å addere ett bit-par.
+
 
 ### Skisse
 
- <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+ <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
   <g>
      <g id="halfadd">
          <line stroke="#000" y2="32" x2="105" y1="31" x1="73" />
@@ -31,8 +36,6 @@ Vi skal lage en side som simulerer virkemåten til en del av en slik adder.
          <text font-size="16" y="75" x="115" stroke-width="0">c</text>
      </g>
      <use href="#halfadd" x="0" y="80" />
-     <use href="#halfadd" x="0" y="160" />
-     <use href="#halfadd" x="0" y="240" />
   </g>
 </svg>
 
@@ -42,9 +45,15 @@ Lag en webside med denne svg figuren inne i en div.
 
 For å ta kopi av figuren: inspect - finn svg taggen, edit-as-html, ta kopi og paste inn i en div på sida di.
 
+:::info
+Du trenger oppdatert versjon av Minos.js for at kodene slik som {c1:=1+2} skal virke.  
+Sjekk også [kortform for if](../Programmering/betingelser#kortform-for-if) for en forklaring
+på `(aa && bb) ? 1 : 0`.
+:::
+
 #### Plassering av checkboxene
 
-lage denne strukturen i html
+Lag denne strukturen i html
 
 ```html
   <div id="adder">
@@ -75,3 +84,10 @@ Sett position:relative for figur,
 position:absolute for #first, .ia .ib .ic .is
 
 
+### Utvid til en 8-bit adder
+
+Sjekk ut svg koden og se om du klarer å lage 8 slike figurer: (abcs)*8  
+Legg merke til at svg-koden bare definerer en figur, men to figurer vises.  
+Bruk samme metode til å legge til 6 ekstra bokser, plasser dem nedover (juster y).
+
+Merk at du må utvide størrelsen på svg området - fra 400 til noe større.
